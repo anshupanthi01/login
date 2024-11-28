@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  box-sizing: border-box;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+body{
+  background-image: url('onepiece.png');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
 }
+.container{
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255,.2);
+  padding: 30px 40px;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+.container h1{
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+.container .input-box{
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  margin: 30px 0px;
+}
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  border: 2px solid white;
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+  padding: 20px 45px 20px 20px ;
+}
+.input-box ::placeholder{
+  color: white;
+}
+.input-box i{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translatey(-50%);
+  font-size: 20%;
+}
+.container .remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.remember-forgot label input{
+  accent-color: white;
+  margin-right: 3px;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.remember-forgot a:hover{
+  text-decoration: underline;
+}
+button{
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: larger;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.register-link{
+  display: flex;
+  font-size: 14.5px;
+  justify-content: center;
+  margin: 20px 0 15px;
+}
+.register-link a:hover{
+  text-decoration: underline;
 }
